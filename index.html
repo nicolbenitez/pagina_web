@@ -1,128 +1,171 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Página Web de Word</title><link rel="stylesheet" href="style.css"></head>
-<body><header>
-    <h1>Página Web de Word</h1>
-</header><nav>
-    <button onclick="mostrar('concepto')">Concepto</button>
-    <button onclick="mostrar('caracteristicas')">Características</button>
-    <button onclick="mostrar('funciones')">Funciones</button>
-    <button onclick="mostrar('tabla')">Tabla</button>
-    <button onclick="mostrar('examen')">Examen</button>
-</nav><div id="inicio">
-    <h2>Bienvenidos</h2>
-</div><section id="concepto" class="contenido">
-    <h2>Concepto</h2>
-    <img src="img1.jpg" alt="Concepto Word"><p>
-    Microsoft Word es un procesador de textos desarrollado por Microsoft
-    que permite crear, editar y dar formato a documentos digitales.
-    Microsoft Word es un software informático procesador de texto,
-     uno de los más utilizados a la hora de trabajar con documentos digitales, 
-     que fue lanzado por Microsoft en 1983.
-     La aparición de las computadoras promovió el desarrollo de este procesador de texto que
-      facilitó el trabajo de redacción. El Word automatizó y mejoró la 
-      tarea de escribir manuscritos, ya que permitió revisar las veces necesarias lo escrito,
-      para editarlo y reformularlo antes de la etapa de impresión.
-</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web de Word</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Página Web de Word</h1>
+    </header>
 
-</section><section id="caracteristicas" class="contenido">
-    <h2>Características</h2>
-    <img src="img2.jpg" alt="Características"><ul>
-    <li>Permite editar documentos.</li>
-    <li>Incluye corrector ortográfico.</li>
-    <li>Permite insertar imágenes.</li>
-    <li>Permite crear tablas.</li>
-    <li>Facilita el diseño de documentos.</li>
-</ul>
+    <nav>
+        <button onclick="mostrar('inicio')">Inicio</button>
+        <button onclick="mostrar('concepto')">Concepto</button>
+        <button onclick="mostrar('caracteristicas')">Características</button>
+        <button onclick="mostrar('funciones')">Funciones</button>
+        <button onclick="mostrar('tabla')">Tabla</button>
+        <button onclick="mostrar('examen')">Examen</button>
+    </nav>
 
-</section><section id="funciones" class="contenido">
-    <h2>Funciones</h2>
-    <img src="img3.jpg" alt="Funciones"><p>
-    <b>Redacción y edición de texto:</b> permite escribir y modificar texto con facilidad, aplicando diferentes formatos y estilos para mejorar la apariencia del documento.
+    <div id="inicio">
+        <img src="bienvenido.jpeg" alt="Imagen de bienvenida" class="img-bienvenida">
+        <h2>Bienvenidos</h2>
+        <p>Selecciona una opción del menú para ver la información</p>
+    </div>
 
-<b>Formato de texto y párrafo:</b> ofrece opciones para cambiar la fuente, el tamaño, el color y el estilo del texto, así como el interlineado, el espaciado entre párrafos y la alineación.
+    <section id="concepto" class="contenido">
+        <h2>Concepto</h2>
+        <img src="img1.jpg" alt="Concepto de Microsoft Word">
+        <p class="texto-justificado">
+            Microsoft Word es un procesador de textos desarrollado por Microsoft que permite crear, editar y dar formato a documentos digitales. Es uno de los más utilizados a la hora de trabajar con documentos digitales, lanzado por primera vez en 1983.
+            <br><br>
+            La aparición de las computadoras promovió su desarrollo, ya que facilitó enormemente la redacción: permitió revisar, corregir y reformular el texto antes de imprimirlo, automatizando tareas que antes se hacían a mano. Con el paso del tiempo, Word ha evolucionado agregando herramientas avanzadas como revisión gramatical, estilos automáticos, inserción de elementos multimedia, colaboración en línea y compatibilidad con múltiples formatos de archivo. Se ha convertido en una herramienta esencial para estudiantes, profesionales y empresas de todo el mundo.
+        </p>
+        <button onclick="mostrar('inicio')" class="boton-volver">Volver al inicio</button>
+    </section>
 
-<b>Inserción de elementos multimedia:</b> permite agregar imágenes, gráficos, tablas, formas, SmartArt y otros elementos visuales para enriquecer el contenido del documento.
+    <section id="caracteristicas" class="contenido">
+        <h2>Características</h2>
+        <img src="img2.jpg" alt="Características de Word">
+        <ul class="texto-justificado">
+            <li>Permite crear y editar documentos de forma sencilla.</li>
+            <li>Incluye corrector ortográfico y gramatical.</li>
+            <li>Permite insertar imágenes, formas y gráficos.</li>
+            <li>Facilita la creación de tablas y listas organizadas.</li>
+            <li>Cuenta con herramientas para diseñar y dar formato profesional.</li>
+            <li>Es compatible con diferentes formatos de archivo.</li>
+            <li>Permite trabajar en equipo y compartir documentos fácilmente.</li>
+        </ul>
+        <button onclick="mostrar('inicio')" class="boton-volver">Volver al inicio</button>
+    </section>
 
-<b>Revisión ortográfica y gramatical:</b> incluye herramientas de corrección que detectan y sugieren correcciones para errores ortográficos y gramaticales.
+    <section id="funciones" class="contenido">
+        <h2>Funciones</h2>
+        <img src="img3.jpg" alt="Funciones de Word">
+        <p class="texto-justificado">
+            <b>Redacción y edición:</b> Escribe y modifica texto con facilidad, aplicando diferentes estilos.<br><br>
+            <b>Formato:</b> Cambia fuente, tamaño, color, alineación y espaciado.<br><br>
+            <b>Inserción de elementos:</b> Agrega imágenes, tablas, gráficos y enlaces.<br><br>
+            <b>Revisión:</b> Detecta errores ortográficos y gramaticales.<br><br>
+            <b>Estilos y plantillas:</b> Mantiene un diseño uniforme o usa diseños prediseñados.<br><br>
+            <b>Colaboración:</b> Trabaja en equipo y realiza seguimiento de cambios.<br><br>
+            <b>Organización:</b> Usa sangrías, tabulaciones y saltos de página para estructurar el contenido.<br><br>
+            <b>Opciones de salida:</b> Guarda en distintos formatos y prepara el documento para imprimir.
+        </p>
+        <button onclick="mostrar('inicio')" class="boton-volver">Volver al inicio</button>
+    </section>
 
-<b>Estilos y temas:</b> facilita la aplicación de estilos predefinidos y temas para mantener la coherencia en el formato del documento.
+    <section id="tabla" class="contenido">
+        <h2>10 Funciones Principales de Word</h2>
+        <img src="img4.jpg" alt="Tabla de funciones">
+        <table>
+            <tr>
+                <th>Función</th>
+            </tr>
+            <tr onclick="mostrarEjemplo('ej1')"><td>Crear documentos</td></tr>
+            <tr onclick="mostrarEjemplo('ej2')"><td>Editar texto</td></tr>
+            <tr onclick="mostrarEjemplo('ej3')"><td>Insertar imágenes</td></tr>
+            <tr onclick="mostrarEjemplo('ej4')"><td>Crear tablas</td></tr>
+            <tr onclick="mostrarEjemplo('ej5')"><td>Corrector ortográfico</td></tr>
+            <tr onclick="mostrarEjemplo('ej6')"><td>Aplicar formatos</td></tr>
+            <tr onclick="mostrarEjemplo('ej7')"><td>Insertar gráficos</td></tr>
+            <tr onclick="mostrarEjemplo('ej8')"><td>Guardar documentos</td></tr>
+            <tr onclick="mostrarEjemplo('ej9')"><td>Imprimir documentos</td></tr>
+            <tr onclick="mostrarEjemplo('ej10')"><td>Compartir archivos</td></tr>
+        </table>
 
-<b>Plantillas:</b> ofrece una variedad de plantillas prediseñadas para diferentes tipos de documentos, como cartas, informes, currículums, entre otros.
+        <div id="ej1" class="ejemplo texto-justificado">Permite redactar cartas, informes, trabajos y documentos de todo tipo.</div>
+        <div id="ej2" class="ejemplo texto-justificado">Permite modificar, agregar o eliminar contenido de textos ya escritos.</div>
+        <div id="ej3" class="ejemplo texto-justificado">Agrega fotografías, ilustraciones y dibujos para enriquecer el contenido.</div>
+        <div id="ej4" class="ejemplo texto-justificado">Organiza datos en filas y columnas para una mejor lectura.</div>
+        <div id="ej5" class="ejemplo texto-justificado">Revisa y sugiere correcciones para errores de escritura.</div>
+        <div id="ej6" class="ejemplo texto-justificado">Modifica el tipo de letra, tamaño, color y posición del texto.</div>
+        <div id="ej7" class="ejemplo texto-justificado">Representa datos numéricos en gráficos visuales.</div>
+        <div id="ej8" class="ejemplo texto-justificado">Almacena archivos en formatos como .docx, .pdf, .txt y más.</div>
+        <div id="ej9" class="ejemplo texto-justificado">Genera copias físicas en papel con el formato deseado.</div>
+        <div id="ej10" class="ejemplo texto-justificado">Comparte documentos por correo, nube o dispositivos externos.</div>
+        
+        <button onclick="mostrar('inicio')" class="boton-volver">Volver al inicio</button>
+    </section>
 
-<b>Trabajo colaborativo:</b> permite a varios usuarios trabajar simultáneamente en un mismo documento, con opciones para añadir comentarios, realizar un seguimiento de cambios y compartir en línea.
+    <section id="examen" class="contenido">
+        <h2>Examen de Word</h2>
+        <img src="img5.jpg" alt="Examen sobre Word">
+        <div id="progreso">
+            Progreso: <span id="porcentaje">0%</span>
+        </div>
 
-<b>Portapapeles:</b> función para copiar, cortar y pegar texto y otros elementos de un documento a otro, o dentro del mismo documento.
+        <form id="formulario">
+            <p>1. ¿Qué es Microsoft Word?</p>
+            <input type="radio" name="p1" value="1"> Procesador de texto<br>
+            <input type="radio" name="p1" value="0"> Navegador web<br>
 
-<b>Listas y numeración:</b> herramientas para crear listas con viñetas, listas numeradas y listas multinivel, facilitando la organización del contenido.
+            <p>2. ¿Word permite insertar imágenes?</p>
+            <input type="radio" name="p2" value="1"> Sí<br>
+            <input type="radio" name="p2" value="0"> No<br>
 
-<b>Tabulaciones y sangrías:</b> opciones para ajustar la posición del texto y los márgenes, creando documentos más estructurados y ordenados.
+            <p>3. ¿Word tiene corrector ortográfico?</p>
+            <input type="radio" name="p3" value="1"> Sí<br>
+            <input type="radio" name="p3" value="0"> No<br>
 
-<b>Salto de página y sección:</b> permite dividir el documento en diferentes páginas y secciones, facilitando la organización y el diseño del contenido.
+            <p>4. ¿Word permite crear tablas?</p>
+            <input type="radio" name="p4" value="1"> Sí<br>
+            <input type="radio" name="p4" value="0"> No<br>
 
-<b>Diseño de página:</b> opciones para ajustar los márgenes, la orientación del papel, el tamaño de la página y el diseño de columnas.
+            <p>5. ¿Quién desarrolla Word?</p>
+            <input type="radio" name="p5" value="1"> Microsoft<br>
+            <input type="radio" name="p5" value="0"> Google<br>
 
-<b>Interlineado y espaciado:</b> herramientas para ajustar el espacio entre líneas de texto y párrafos, mejorando la legibilidad del documento.
+            <p>6. ¿Word sirve para redactar documentos?</p>
+            <input type="radio" name="p6" value="1"> Sí<br>
+            <input type="radio" name="p6" value="0"> No<br>
 
-<b>Justificación del texto:</b> opciones para alinear el texto a la izquierda, derecha, centrado o justificado, según las necesidades del documento.
+            <p>7. ¿Word permite imprimir documentos?</p>
+            <input type="radio" name="p7" value="1"> Sí<br>
+            <input type="radio" name="p7" value="0"> No<br>
 
-<b>Hipervínculos y referencias cruzadas:</b> permite crear enlaces a otras partes del documento, a documentos externos, o a sitios web, facilitando la navegación y el acceso a la información.
+            <p>8. ¿Word puede guardar archivos en diferentes formatos?</p>
+            <input type="radio" name="p8" value="1"> Sí<br>
+            <input type="radio" name="p8" value="0"> No<br>
 
-<b>Comandos y macros:</b> herramientas avanzadas para automatizar tareas repetitivas mediante la grabación y ejecución de macros.
+            <p>9. ¿Word permite cambiar el tipo y tamaño de letra?</p>
+            <input type="radio" name="p9" value="1"> Sí<br>
+            <input type="radio" name="p9" value="0"> No<br>
 
-<b>Tabulación:</b> herramienta para alinear texto y números en columnas, creando un formato más limpio y organizado.
-</p>
+            <p>10. ¿Word es una red social?</p>
+            <input type="radio" name="p10" value="0"> Sí<br>
+            <input type="radio" name="p10" value="1"> No<br><br>
 
-</section><section id="tabla" class="contenido"><h2>10 Funciones Principales de Word</h2><img src="img4.jpg" alt="Tabla"><table><tr>
-<th>Función</th>
-</tr><tr onclick="mostrarEjemplo('ej1')"><td>Crear documentos</td></tr>
-<tr onclick="mostrarEjemplo('ej2')"><td>Editar texto</td></tr>
-<tr onclick="mostrarEjemplo('ej3')"><td>Insertar imágenes</td></tr>
-<tr onclick="mostrarEjemplo('ej4')"><td>Crear tablas</td></tr>
-<tr onclick="mostrarEjemplo('ej5')"><td>Corrector ortográfico</td></tr>
-<tr onclick="mostrarEjemplo('ej6')"><td>Aplicar formatos</td></tr>
-<tr onclick="mostrarEjemplo('ej7')"><td>Insertar gráficos</td></tr>
-<tr onclick="mostrarEjemplo('ej8')"><td>Guardar documentos</td></tr>
-<tr onclick="mostrarEjemplo('ej9')"><td>Imprimir documentos</td></tr>
-<tr onclick="mostrarEjemplo('ej10')"><td>Compartir archivos</td></tr></table><div id="ej1" class="ejemplo">Permite redactar cartas, informes y trabajos.</div>
-<div id="ej2" class="ejemplo">Permite modificar textos existentes.</div>
-<div id="ej3" class="ejemplo">Permite agregar fotografías e ilustraciones.</div>
-<div id="ej4" class="ejemplo">Permite organizar información en filas y columnas.</div>
-<div id="ej5" class="ejemplo">Detecta errores ortográficos.</div>
-<div id="ej6" class="ejemplo">Cambia color, tamaño y tipo de letra.</div>
-<div id="ej7" class="ejemplo">Permite agregar gráficos estadísticos.</div>
-<div id="ej8" class="ejemplo">Guarda archivos en diferentes formatos.</div>
-<div id="ej9" class="ejemplo">Permite imprimir documentos físicos.</div>
-<div id="ej10" class="ejemplo">Facilita enviar documentos a otras personas.</div></section><section id="examen" class="contenido"><h2>Examen de Word</h2><img src="img5.jpg" alt="Examen"><div id="progreso">
-    Progreso: <span id="porcentaje">0%</span>
-</div><form id="formulario"><p>1. ¿Qué es Microsoft Word?</p>
-<input type="radio" name="p1" value="1"> Procesador de texto<br>
-<input type="radio" name="p1" value="0"> Navegador web<p>2. ¿Word permite insertar imágenes?</p>
-<input type="radio" name="p2" value="1"> Sí<br>
-<input type="radio" name="p2" value="0"> No<p>3. ¿Word tiene corrector ortográfico?</p>
-<input type="radio" name="p3" value="1"> Sí<br>
-<input type="radio" name="p3" value="0"> No<p>4. ¿Word permite crear tablas?</p>
-<input type="radio" name="p4" value="1"> Sí<br>
-<input type="radio" name="p4" value="0"> No<p>5. ¿Quién desarrolla Word?</p>
-<input type="radio" name="p5" value="1"> Microsoft<br>
-<input type="radio" name="p5" value="0"> Google<p>6. ¿Word sirve para redactar documentos?</p>
-<input type="radio" name="p6" value="1"> Sí<br>
-<input type="radio" name="p6" value="0"> No<p>7. ¿Word permite imprimir documentos?</p>
-<input type="radio" name="p7" value="1"> Sí<br>
-<input type="radio" name="p7" value="0"> No<p>8. ¿Word puede guardar archivos?</p>
-<input type="radio" name="p8" value="1"> Sí<br>
-<input type="radio" name="p8" value="0"> No<p>9. ¿Word permite cambiar fuentes?</p>
-<input type="radio" name="p9" value="1"> Sí<br>
-<input type="radio" name="p9" value="0"> No<p>10. ¿Word es una red social?</p>
-<input type="radio" name="p10" value="0"> Sí<br>
-<input type="radio" name="p10" value="1"> No<br><br>
+            <button type="button" onclick="calificarExamen()">Calificar Examen</button>
+        </form>
 
-<button type="button" onclick="calificarExamen()">
-Calificar Examen
-</button></form><div id="resultado"></div><div id="ultimoResultado">
-<h3>Último resultado guardado</h3>
-<p id="guardado"></p>
-</div></section><script src="script.js"></script></body>
+        <div id="resultado"></div>
+
+        <div id="ultimoResultado">
+            <h3>Último resultado guardado</h3>
+            <p id="guardado"></p>
+        </div>
+
+        <button onclick="mostrar('inicio')" class="boton-volver">Volver al inicio</button>
+    </section>
+
+    <footer>
+        <p>© 2026 - Página educativa sobre Microsoft Word</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
